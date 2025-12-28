@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofrecemos - K DETAILS</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      background: linear-gradient(to bottom right, #ffe6f0, #d9b3ff); 
+      color:#333; 
+      margin:0; 
+      padding:0; 
+      text-align:center; 
+    }
+
+    header { 
+      background: linear-gradient(90deg,#ff33aa,#9933ff); 
+      color:white; 
+      padding:30px; 
+      text-shadow:1px 1px #ffb3e6; 
+    }
+
+    header h1 { margin-bottom:10px; }
+
+    .cards { 
+      display:flex; 
+      flex-wrap:wrap; 
+      justify-content:center; 
+      gap:30px; 
+      padding:50px 20px; 
+    }
+
+    .card { 
+      flex:1 1 300px; 
+      background: linear-gradient(145deg, #ff99cc, #cc66ff); 
+      padding:25px; 
+      border-radius:20px; 
+      color:white; 
+      box-shadow:0 8px 20px rgba(0,0,0,0.2); 
+      transition: transform 0.3s, box-shadow 0.3s; 
+      cursor:pointer; 
+    }
+
+    .card:hover { 
+      transform:translateY(-10px); 
+      box-shadow:0 12px 25px rgba(0,0,0,0.3); 
+    }
+
+    .card h3 { 
+      font-size:1.8rem; 
+      margin-bottom:15px; 
+    }
+
+    .card p { 
+      font-size:1.1rem; 
+      line-height:1.5; 
+    }
+
+    footer { 
+      background:#9933ff; 
+      color:white; 
+      padding:30px 20px; 
+      font-weight:bold; 
+      text-shadow:1px 1px #ffb3e6; 
+    }
+
+    .whatsapp-logo { 
+      position: fixed; 
+      bottom: 25px; 
+      right:25px; 
+      width:70px; 
+      height:70px; 
+      transition: transform 0.3s; 
+    }
+
+    .whatsapp-logo:hover { 
+      transform: scale(1.2); 
+      cursor:pointer; 
+    }
+
+    @media(max-width:768px){ 
+      .cards{flex-direction:column;align-items:center;} 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ofrecemos</h1>
+    <p>Elige lo que más te guste</p>
+  </header>
+
+  <div class="cards">
+    <div class="card" onclick="window.location='postres.html';">
+      <h3>Postres</h3>
+      <p>Descubre nuestros postres para toda ocasión</p>
+    </div>
+
+    <div class="card" onclick="window.location='refrigerios.html';">
+      <h3>Refrigerios</h3>
+      <p>Refrigerios empresariales y personalizados para eventos</p>
+    </div>
+
+    <div class="card" onclick="window.location='detalles.html';">
+      <h3>Detalles para toda ocasión</h3>
+      <p>Ideas y detalles personalizados para tus eventos</p>
+    </div>
+  </div>
+
+  <footer>© 2025 K DETAILS - Todos los derechos reservados</footer>
+
+  <a href="https://wa.me/573105366449" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postres - K DETAILS</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #d9b3ff);
+      text-align:center;
+      color:#333;
+    }
+
+    header{
+      background: linear-gradient(90deg,#ff33aa,#9933ff);
+      padding:30px;
+      color:white;
+      text-shadow:1px 1px #ffb3e6;
+    }
+
+    header h1{
+      font-size:2.5rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+    }
+
+    .galeria{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
+      padding:50px 30px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      padding:15px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-10px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.3);
+    }
+
+    .card img,
+    .card video{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:20px;
+    }
+
+    footer{
+      background:#9933ff;
+      color:white;
+      padding:30px;
+      font-weight:bold;
+      text-shadow:1px 1px #ffb3e6;
+    }
+
+    .whatsapp-logo{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:70px;
+      height:70px;
+      transition:transform 0.3s;
+      z-index:1000;
+    }
+
+    .whatsapp-logo:hover{
+      transform:scale(1.2);
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Detalles para toda ocasión</h1>
+  <p>Regalos únicos, personalizados y llenos de amor</p>
+</header>
+
+<section class="galeria">
+
+  <div class="card"><img src="bolsitos.jpeg"></div>
+  <div class="card"><img src="bolso.jpeg"></div>
+  <div class="card"><img src="lapiceros.jpeg"></div>
+  <div class="card"><img src="bolsooos.jpeg"></div>
+  <div class="card"><img src="llaveros.jpeg"></div>
+  <div class="card"><img src="monedero.jpeg"></div>
+
+  <!-- VIDEO -->
+  <div class="card">
+    <video src="WhatsApp Video 2025-12-26 at 11.52.52 PM.mp4" controls></video>
+  </div>
+
+</section>
+
+<footer>© 2025 K DETAILS - Todos los derechos reservados</footer>
+
+<a href="https://wa.me/573105366449" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+       class="whatsapp-logo">
+</a>
+
+</body>
+</html>
